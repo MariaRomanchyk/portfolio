@@ -1,0 +1,52 @@
+/* Règles de base */
+:root{
+  --background-color : #ECFFFD;
+  --background-color-2 : #FFFFFF;
+  --text-color-1 : #103178;
+  --text-color-2 : #FF7700;
+  --text-color-3 : #00ADB5;
+  --button-border-color : #C00F0C;
+  --police-titre : Playfair Display;
+  --police-paragraphe : Poppins; 
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--police-titre);
+  color: var(--text-color-1);
+}
+p, a, li, b, button{
+  font-family: var(--police-paragraphe);
+  color: var(--text-color-1);
+}
+
+/* Style de bouton */
+.button{
+  font-family: var(--police-paragraphe);
+  font-size: 24px;
+  color: var(--background-color);
+  background-color: var(--text-color-2);
+  border: 0.1rem solid var(--button-border-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in-out;
+}
+.button:hover{
+  background-color: var(--button-border-color);
+  color: var(--background-color);
+  box-shadow: 0 0 10px var(--text-color-2);
+  font-size: 28px;
+  transition: all 0.3s ease-in-out;
+
+}

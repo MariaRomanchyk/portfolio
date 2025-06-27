@@ -1,0 +1,125 @@
+/* Style de page */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-2);
+}
+main{
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.title{
+  font-size: 64px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+/* Section "The green escape" */
+.escape-section{
+  width: 100%;
+}
+.escape-title{
+  display: flex;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+}
+.escape-text{
+  font-size: 24px;
+  text-align: justify;
+  margin: 2rem;
+}
+.valeurs-title{
+  display: flex;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+}
+.valeurs-ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 2rem;
+}
+.valeurs-li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background: url('../images/vague.webp') no-repeat left top;
+    background-size: 30px 30px;
+}
+.valeurs-title-li{
+  font-size: 24px;
+  font-weight: 700;
+}
+.valeurs-p-li{
+  font-size: 24px;
+}
+
+/* Section "The green escape images" */
+.images-section{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.images-div1{
+  width: 50%;
+}
+.images-div2{
+  width: 50%;
+}
+.images-section img{
+  width: 95%;
+  height: 250px;
+  margin: 1rem;
+  border: 2px solid lightgray;
+  box-shadow: 0 0 10px lightgray;
+  transition: transform 0.5s ease-in-out;
+}
+.images-section img:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* Responsiv */
+@media screen and (max-width: 768px){
+  .title{
+  display: flex;
+  justify-content: center;
+}
+  .escape-title{
+    font-size: 42px;
+  }
+  .escape-text{
+    margin: 0.5rem;
+  }
+  .valeurs-title{
+    font-size: 32px;
+  }
+  .valeurs-ol{
+    margin: 0.5rem;
+  }
+  .images-section{
+  display: flex;
+  flex-direction: column;
+}
+.images-div1, .images-div2{
+  width: 100%;
+}
+.images-section img{
+  margin: 0.5rem;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .images-section{
+  display: flex;
+  flex-direction: column;
+}
+.images-div1, .images-div2{
+  width: 100%;
+}
+}

@@ -1,0 +1,266 @@
+/* Style de page */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-2);
+}
+main{
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+  background-color: var(--background-color);
+  align-items: center;
+  justify-content: center;
+}
+.title{
+    font-size: 64px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+/* Section sur les compétences */
+.competences-section{
+    display: flex;
+    justify-content: space-between;
+    border: 0.1rem solid lightgray;
+    box-shadow: 0 0 10px lightgray;
+    width: 100%;
+}
+.competences-section div{
+    width: 55%;
+}
+.competences-title{
+    font-size: 44px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.competences-ul{
+    margin: 2rem;
+}
+.competences-ul li{
+    color: var(--text-color-2);
+    font-size: 24px;
+}
+.competences-img{
+    width: 600px;
+}
+
+/* Section de développement web */
+.web-section{
+    display: flex;
+    justify-content: space-between;
+    border: 0.1rem solid lightgray;
+    box-shadow: 0 0 10px lightgray;
+    margin-top: 2rem;
+    width: 100%;
+}
+.web-div{
+  width: 55%;
+}
+.web-title{
+    font-size: 44px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.web-ul{
+    margin: 2rem;
+}
+.web-ul li{
+    color: var(--text-color-2);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.web-containers {
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    margin: 20px 0;
+    width: 100%;
+}
+.web-container {
+    height: 100%;
+    background-color: var(--text-color-3);
+}
+.web-html{
+  width: 80%;
+}
+.web-css{
+  width: 80%;
+}
+.web-js{
+  width: 80%;
+}
+.web-img{
+  width: 600px;
+}
+
+/* Section sur les langues */
+.langues-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border: 0.1rem solid lightgray;
+    box-shadow: 0 0 10px lightgray;
+    width: 100%;
+}
+.langues-div{
+  width: 55%;
+}
+.langues-title{
+    font-size: 44px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.langues-ul{
+    margin: 2rem;
+}
+.langues-ul li{
+    color: var(--text-color-2);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.an{
+    width: 70%;
+}
+.fr{
+    width: 70%;
+}
+.ru{
+    width: 100%;
+}
+.uk{
+    width: 100%;
+}
+.langues-img{
+    width: 600px;
+}
+
+/* Responsiv */
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 44px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+    .competences-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .competences-ul{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+   .competences-section div{
+    width: 85%;
+   }
+    .competences-img{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .web-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .web-ul{
+        padding: 0;
+        margin: 0;
+    }
+    .web-div{
+        width: 85%;
+        justify-content: center;
+    }
+    .web-img{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .langues-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .langues-div{
+        width: 85%;
+        justify-content: center;
+    }
+    .langues-ul{
+        padding: 0;
+        margin: 0;
+    }
+    .langues-img{
+        width: 90%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .title{
+        font-size: 44px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+    .competences-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .competences-ul{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+   .competences-section div{
+    width: 85%;
+   }
+    .competences-img{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .web-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .web-ul{
+        padding: 0;
+        margin: 0;
+    }
+    .web-div{
+        width: 85%;
+        justify-content: center;
+    }
+    .web-img{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .langues-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .langues-div{
+        width: 85%;
+        justify-content: center;
+    }
+    .langues-ul{
+        padding: 0;
+        margin: 0;
+    }
+    .langues-img{
+        width: 90%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+}
